@@ -1,0 +1,122 @@
+.fondo{
+	 height: 100vh;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#15aaef+0,278af4+40,6e14ce+76,6211b2+94 */
+background: #15aaef; /* Old browsers */
+background: -moz-linear-gradient(45deg, #15aaef 0%, #278af4 40%, #6e14ce 76%, #6211b2 94%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #15aaef 0%,#278af4 40%,#6e14ce 76%,#6211b2 94%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #15aaef 0%,#278af4 40%,#6e14ce 76%,#6211b2 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', endColorstr='#6211b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body{
+	background: url('../img/fondob.jpg') no-repeat center center fixed;
+
+ -webkit-background-size: cover;
+
+ -moz-background-size: cover;
+
+ background-size: cover;
+
+ -o-background-size: cover;
+}
+
+.fondo1{
+	background: #2d1b35;
+background: -moz-linear-gradient(left, #2d1b35 0%, #592c41 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #2d1b35), color-stop(100%, #592c41));
+background: -webkit-linear-gradient(left, #2d1b35 0%, #592c41 100%);
+background: -o-linear-gradient(left, #2d1b35 0%, #592c41 100%);
+background: -ms-linear-gradient(left, #2d1b35 0%, #592c41 100%);
+background: linear-gradient(to right, #2d1b35 0%, #592c41 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d1b35', endColorstr='#592c41', GradientType=1 );
+}
+
+.fondo2{
+	background: #893e4a;
+background: -moz-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #893e4a), color-stop(100%, #bd4c50));
+background: -webkit-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
+background: -o-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
+background: -ms-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
+background: linear-gradient(to right, #893e4a 0%, #bd4c50 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#893e4a', endColorstr='#bd4c50', GradientType=1 );
+}
+
+.fondo3{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#15aaef+0,6e14ce+70,6e14ce+74 */
+
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 1rem;
+    border: 0px solid rgba(0,0,0,.125);
+
+		background-color: rgba(255, 255, 255, 0.83);
+
+}
+
+.card-group{
+	border-radius: 1rem;
+	border: 0px solid;
+}
+
+.shadow {
+   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+}
+
+
+
+ .btn-custom {
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6211b2+5,6e14ce+30,278af4+78,15aaef+100 */
+background: #6211b2; /* Old browsers */
+background: -moz-linear-gradient(left, #6211b2 5%, #6e14ce 30%, #278af4 78%, #15aaef 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #6211b2 5%,#6e14ce 30%,#278af4 78%,#15aaef 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #6211b2 5%,#6e14ce 30%,#278af4 78%,#15aaef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6211b2', endColorstr='#15aaef',GradientType=1 ); /* IE6-9 */
+   border-color: #6211B2;
+ }
+
+.btn-custom:hover {
+    color: #fff;
+font-size:1.25rem;
+background: #15aaef;
+background: -moz-linear-gradient(left, #15aaef 0%, #278af4 22%, #6e14ce 70%, #6211b2 95%);
+background: -webkit-linear-gradient(left, #15aaef 0%,#278af4 22%,#6e14ce 70%,#6211b2 95%);
+background: linear-gradient(to right, #15aaef 0%,#278af4 22%,#6e14ce 70%,#6211b2 95%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', endColorstr='#6211b2',GradientType=1 );
+   border-color: #15aaef;
+ }
+
+.btn-custom:active{
+        color: #6211b2;
+	background: #fff;
+}
+
+.pt-8{
+	padding-top: 9rem!important;
+}
+
+input{
+	background-color: #d8d8d8;
+}
