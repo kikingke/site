@@ -1,4 +1,4 @@
-/*.fondo{
+.fondo1{
 	height: 100vh;
    width: 100vw;
    min-height:100%;
@@ -17,55 +17,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
 	-o-background-size: cover;
 	background-size: cover;
 
-}*/
+}
 .formm{
     border-radius: 10px;
 
 }
 .fondo{
 	background: url('../img/fondob.jpg') no-repeat center center fixed;
-
-   height: 100vh;
-   width: 100vw;
-   min-height:100%;
-
- -webkit-background-size: cover;
-  background-attachment: fixed;
- -moz-background-size: cover;
-
- background-size: cover;
-
- -o-background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    min-height:100%;
+   -webkit-background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+    
 }
 
-.fondo1{
-	background: #2d1b35;
-background: -moz-linear-gradient(left, #2d1b35 0%, #592c41 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, #2d1b35), color-stop(100%, #592c41));
-background: -webkit-linear-gradient(left, #2d1b35 0%, #592c41 100%);
-background: -o-linear-gradient(left, #2d1b35 0%, #592c41 100%);
-background: -ms-linear-gradient(left, #2d1b35 0%, #592c41 100%);
-background: linear-gradient(to right, #2d1b35 0%, #592c41 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d1b35', endColorstr='#592c41', GradientType=1 );
-}
-
-.fondo2{
-	background: #893e4a;
-    background: -moz-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #893e4a), color-stop(100%, #bd4c50));
-    background: -webkit-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
-    background: -o-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
-    background: -ms-linear-gradient(left, #893e4a 0%, #bd4c50 100%);
-    background: linear-gradient(to right, #893e4a 0%, #bd4c50 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#893e4a', endColorstr='#bd4c50', GradientType=1 );
-}
 
 .wrap {
     padding: 0px;
-    
     border: 0px solid rgba(0,0,0,.125);
-	
-
 }
 
 .user-img{
@@ -74,14 +47,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d1b35', end
 }
 
 .modal-content{
-background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
     padding: 18px 18px;
     border-radius: 1rem;
-border: 0px solid rgba(0,0,0,.2); 
+    border: 0px solid rgba(0,0,0,.2); 
 }
 
 .modal-dialog{
-    max-width: 750px;
+    max-width: 720px;
 }
 
 .shadow {
