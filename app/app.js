@@ -1,5 +1,3 @@
-
-
  (function() {
    
   var nombrecito;
@@ -87,9 +85,17 @@ app.controller('homeController', function($scope) {
 // $scope.email = emailuser;
   console.log('Pase por aqui' + nombrecito);
   $scope.signOut = function(){
-    firebase.auth().signOut();
+    firebase.auth().signOut().then(function() {
+     // Sign-out successful.
+       window.location.href = '/site/#!/';
+     }).catch(function(error) {
+       // An error happened.
+      console.log(error);
+     });
     //window.location.href = '/';
-   window.location.href = '/site/#!/';
+ 
+   
+   
   }
 
 });
@@ -139,9 +145,3 @@ document.getElementById("btnLogOut").addEventListener('click', e=>{
 
  
 })();
- 
-
-  
-
-  
-
