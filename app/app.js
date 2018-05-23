@@ -32,7 +32,7 @@
               var uid = user.uid;
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
-              window.location.href = '/home';
+              window.replace('/home');
                  
               }else{
                  window.location.href = '/';
