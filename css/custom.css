@@ -2,7 +2,6 @@
 	height: 100vh;
    width: 100vw;
    min-height:100%;
-
 background: #15aaef; 
 background: -moz-linear-gradient(45deg, #15aaef 0%, #278af4 40%, #6e14ce 76%, #6211b2 94%); 
 background: -webkit-linear-gradient(45deg, #15aaef 0%,#278af4 40%,#6e14ce 76%,#6211b2 94%); 
@@ -18,6 +17,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
 	background-size: cover;
 
 }
+
+.alineamientoemail{
+  margin-top: 0.5rem;
+margin-right: 0.3rem;
+margin-bottom: 0.3rem;
+}
+
+.button_profile{
+  color: rgba(0,0,0,.5);
+  border-color: rgba(0,0,0,.1);
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: .25rem;
+}
+
+.button_profile:hover{
+  color: #3f3f3f !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(0,0,0,.3);
+}
+
 .formm{
     border-radius: 10px;
 
@@ -27,6 +49,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
     height: 100vh;
     width: 100vw;
     min-height:100%;
+    min-width: 100%;
    -webkit-background-size: cover;
     background-attachment: fixed;
     -moz-background-size: cover;
@@ -38,7 +61,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
 
 .wrap {
     padding: 0px;
-    border: 0px solid rgba(0,0,0,.125);
+    border: 0px solid rgba(0,0,0,.1);
 }
 
 .user-img{
@@ -47,9 +70,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
 }
 
 .modal-content{
-    background-color: rgba(255, 255, 255, 0.75);
+/*    background-color: rgba(255, 255, 255, 0.75);*/
+    opacity: 0.85;
     padding: 18px 18px;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     border: 0px solid rgba(0,0,0,.2); 
 }
 
@@ -83,6 +107,7 @@ background: -webkit-linear-gradient(left, #15aaef 0%,#278af4 22%,#6e14ce 70%,#62
 background: linear-gradient(to right, #15aaef 0%,#278af4 22%,#6e14ce 70%,#6211b2 95%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', endColorstr='#6211b2',GradientType=1 );
    border-color: #15aaef;
+   opacity: 1;
  }
 
 .btn-custom:active{

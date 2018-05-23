@@ -17,10 +17,22 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/angular-route.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+	<script>
+		var config = {
+		apiKey: "AIzaSyBEJOp1ZM3GoUuFEVuc-c0ezrI90Lxf4wA",
+		authDomain: "mipr-c07c8.firebaseapp.com",
+		databaseURL: "https://mipr-c07c8.firebaseio.com",
+		projectId: "mipr-c07c8",
+		storageBucket: "mipr-c07c8.appspot.com",
+		messagingSenderId: "136618438101"
+		};
+		firebase.initializeApp(config);
+	</script>
+<!-- 	<script src="js/angularfire.min.js"></script> -->
 	<script src="app/app.js"></script>
 	<script src="controller/loginController.js"></script>
 	<script src="controller/homeController.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
