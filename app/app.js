@@ -1,6 +1,7 @@
 // (function() {
-   initState();
   var nombrecito;
+   initState();
+
   var app = angular.module('myApp', ['ngRoute']);
   
   app.config(function($routeProvider) {
@@ -76,7 +77,7 @@ app.controller('loginController', function($scope) {
  
 
 app.controller('homeController', function($scope) {
- //console.log(nombrecito);
+ console.log('>>>'nombrecito);
 // $scope.email = emailuser;
  var previousUser = firebase.auth().currentUser;
 //var usuariojeto = firebase.auth().UserInfo().email;
