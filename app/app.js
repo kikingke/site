@@ -32,11 +32,13 @@
               var uid = user.uid;
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
-               try{
-                window.location = '/site/home';
-               }catch(e){
-               console.log(e);
-               }
+               
+               console.log( window.location);
+//                try{
+//                 window.location = '/site/home';
+//                }catch(e){
+//                console.log(e);
+//                }
               console.log('here');
                  
               }else{
