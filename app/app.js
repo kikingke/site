@@ -51,7 +51,6 @@ function initState(){
 }
            
        
-
 app.controller('loginController', function($scope) {
  
  // $scope.message = 'Home Site';
@@ -73,18 +72,13 @@ app.controller('loginController', function($scope) {
 
   }
 
-
-
-
-     
-
 });
  
 
 app.controller('homeController', function($scope) {
  //console.log(nombrecito);
 // $scope.email = emailuser;
-var usuariojeto = firebase.auth().currentUser;
+var usuariojeto = firebase.auth().UserInfo().email;
   console.log('Pase por aqui: ' + usuariojeto);
   $scope.signOut = function(){
     firebase.auth().signOut().then(function() {
