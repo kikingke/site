@@ -34,6 +34,7 @@
               console.log('Usuarios activos '+ email);
                
                console.log( window.location);
+                   console.log( window.location.pathname);
 //                try{
 //                 window.location = '/site/home';
 //                }catch(e){
@@ -42,7 +43,7 @@
               console.log('here');
                  
               }else{
-                 window.location = '/site';
+                // window.location = '/site';
                 console.log('No hay usuarios activos');
               }
           })
