@@ -33,14 +33,14 @@
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
                try{
-                window.location = '/home';
+                window.location = '/site/home';
                }catch(e){
                console.log(e);
                }
               console.log('here');
                  
               }else{
-                 window.location.href = '/';
+                 window.location = '/site';
                 console.log('No hay usuarios activos');
               }
           })
