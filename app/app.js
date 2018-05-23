@@ -81,7 +81,7 @@ app.controller('loginController', function($scope) {
  
 
 app.controller('homeController', function($scope) {
- $scope.email = document.getElementByID('status');
+ $scope.email = email;
   $scope.signOut = function(){
     firebase.auth().signOut();
     //window.location.href = '/';
