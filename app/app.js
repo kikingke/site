@@ -84,8 +84,8 @@ app.controller('loginController', function($scope) {
 app.controller('homeController', function($scope) {
  //console.log(nombrecito);
 // $scope.email = emailuser;
-nombrecito = firebase.UserInfo.email;
-  console.log('Pase por aqui: ' + nombrecito);
+var usuariojeto = firebase.auth().currentUser;
+  console.log('Pase por aqui: ' + usuariojeto);
   $scope.signOut = function(){
     firebase.auth().signOut().then(function() {
      // Sign-out successful.
