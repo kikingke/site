@@ -33,7 +33,7 @@
               var isAnonymous = user.isAnonymous;
               var uid = user.uid;
               var providerData = user.providerData;
-              console.log('Usuarios activos '+ email);
+              console.log('Usuarios activos '+ emailuser);
                console.log(emailuser);
               // console.log( window.location);
               //     console.log( window.location.pathname);
