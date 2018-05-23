@@ -1,7 +1,7 @@
 
 
  (function() {
-  const emailuser = '';
+   
   
   var app = angular.module('myApp', ['ngRoute']);
   
@@ -27,7 +27,7 @@
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
               var displayName = user.displayName;
-              emailuser = user.email;
+              const emailuser = user.email;
               var emailVerified = user.emailVerified;
               var photoURL = user.photoURL;
               var isAnonymous = user.isAnonymous;
