@@ -18,6 +18,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
 
 }
 
+.dropdown-menu.dropdown-menu-right.show::before {
+    content: "";
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    top: -16px;
+    left: calc(85% - 4px);
+}
+
+.dropdown-menu.dropdown-menu-right.show{
+	margin-top:10px;
+}
+
+
 .alineamientoemail{
   margin-top: 0.5rem;
 margin-right: 0.3rem;
