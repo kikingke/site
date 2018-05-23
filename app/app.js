@@ -1,6 +1,8 @@
 
 
  (function() {
+  const emailuser = '';
+  
   var app = angular.module('myApp', ['ngRoute']);
   
   app.config(function($routeProvider) {
@@ -25,7 +27,7 @@
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
               var displayName = user.displayName;
-              const email = user.email;
+              emailuser = user.email;
               var emailVerified = user.emailVerified;
               var photoURL = user.photoURL;
               var isAnonymous = user.isAnonymous;
@@ -40,7 +42,7 @@
 //                }catch(e){
 //                console.log(e);
 //                }
-              console.log('changed1');
+            //  console.log('changed1');
                  
               }else{
                 window.location.href = '/site/#!/';
@@ -81,7 +83,7 @@ app.controller('loginController', function($scope) {
  
 
 app.controller('homeController', function($scope) {
- $scope.email = email;
+ $scope.email = emailuser;
   $scope.signOut = function(){
     firebase.auth().signOut();
     //window.location.href = '/';
