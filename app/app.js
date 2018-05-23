@@ -1,5 +1,5 @@
  (function() {
-   
+   initState();
   var nombrecito;
   var app = angular.module('myApp', ['ngRoute']);
   
@@ -54,8 +54,6 @@ function initState(){
 
 app.controller('loginController', function($scope) {
  
- initState();
- 
  // $scope.message = 'Home Site';
   $scope.signIn = function(){
    var email = $scope.user.txtEmail;
@@ -86,7 +84,7 @@ app.controller('loginController', function($scope) {
 app.controller('homeController', function($scope) {
  //console.log(nombrecito);
 // $scope.email = emailuser;
-  console.log('Pase por aqui' + nombrecito);
+  console.log('Pase por aqui: ' + nombrecito);
   $scope.signOut = function(){
     firebase.auth().signOut().then(function() {
      // Sign-out successful.
