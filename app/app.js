@@ -27,7 +27,7 @@
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
               var displayName = user.displayName;
-              const emailuser = user.email;
+              let emailuser = user.email;
               var emailVerified = user.emailVerified;
               var photoURL = user.photoURL;
               var isAnonymous = user.isAnonymous;
@@ -84,7 +84,7 @@ app.controller('loginController', function($scope) {
 
 app.controller('homeController', function($scope) {
  console.log(emailuser);
- $scope.email = emailuser;
+// $scope.email = emailuser;
   $scope.signOut = function(){
     firebase.auth().signOut();
     //window.location.href = '/';
