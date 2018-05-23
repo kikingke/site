@@ -32,10 +32,10 @@
               var uid = user.uid;
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
-              location.h
+              location.href = "/home";
                  
               }else{
-                
+                 location.href = "/";
                 console.log('No hay usuarios activos');
               }
           })
