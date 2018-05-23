@@ -34,9 +34,9 @@
               var uid = user.uid;
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
-               
-               console.log( window.location);
-                   console.log( window.location.pathname);
+               console.log(emailuser);
+              // console.log( window.location);
+              //     console.log( window.location.pathname);
 //                try{
                 window.location.href = '/site/#!/home';
 //                }catch(e){
@@ -83,6 +83,7 @@ app.controller('loginController', function($scope) {
  
 
 app.controller('homeController', function($scope) {
+ console.log(emailuser);
  $scope.email = emailuser;
   $scope.signOut = function(){
     firebase.auth().signOut();
