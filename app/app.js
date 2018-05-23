@@ -32,10 +32,10 @@
               var uid = user.uid;
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
-              location.href = "/home";
+              window.location.href = '/home';
                  
               }else{
-                 location.href = "/";
+                 window.location.href = '/';
                 console.log('No hay usuarios activos');
               }
           })
@@ -75,7 +75,7 @@ app.controller('loginController', function($scope) {
 app.controller('homeController', function($scope) {
   $scope.signOut = function(){
     firebase.auth().signOut();
-    $location.path("/");
+    window.location.href = '/';
   }
 
 });
