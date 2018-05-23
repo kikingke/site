@@ -21,7 +21,7 @@
 
 });
 
-
+function initState(){
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
               var displayName = user.displayName;
@@ -48,11 +48,14 @@
               }
           })
 
- 
+}
            
        
 
 app.controller('loginController', function($scope) {
+ 
+ initState();
+ 
  // $scope.message = 'Home Site';
   $scope.signIn = function(){
    var email = $scope.user.txtEmail;
