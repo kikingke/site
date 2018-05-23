@@ -36,7 +36,7 @@
                console.log( window.location);
                    console.log( window.location.pathname);
 //                try{
-//                 window.location = '/site/home';
+                window.location.href = '/site/home';
 //                }catch(e){
 //                console.log(e);
 //                }
@@ -83,7 +83,7 @@ app.controller('loginController', function($scope) {
 app.controller('homeController', function($scope) {
   $scope.signOut = function(){
     firebase.auth().signOut();
-    window.location.href = '/';
+    //window.location.href = '/';
   }
 
 });
