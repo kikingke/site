@@ -2,7 +2,7 @@
 
  (function() {
    
-  
+  var nombrecito;
   var app = angular.module('myApp', ['ngRoute']);
   
   app.config(function($routeProvider) {
@@ -27,14 +27,14 @@
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
               var displayName = user.displayName;
-              var emailuser = user.email;
+              nombrecito = user.email;
               var emailVerified = user.emailVerified;
               var photoURL = user.photoURL;
               var isAnonymous = user.isAnonymous;
               var uid = user.uid;
               var providerData = user.providerData;
-              console.log('Usuarios activos '+ emailuser);
-               console.log(emailuser);
+              console.log('Usuarios activos '+ nombrecito);
+               console.log(nombrecito);
               // console.log( window.location);
               //     console.log( window.location.pathname);
 //                try{
@@ -83,7 +83,7 @@ app.controller('loginController', function($scope) {
  
 
 app.controller('homeController', function($scope) {
- console.log(emailuser);
+ //console.log(nombrecito);
 // $scope.email = emailuser;
   $scope.signOut = function(){
     firebase.auth().signOut();
