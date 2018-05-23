@@ -33,11 +33,11 @@
               var providerData = user.providerData;
               console.log('Usuarios activos '+ email);
                try{
-                window.replace('/home');
+                window.location = '/home';
                }catch(e){
                console.log(e);
                }
-              
+              console.log('here');
                  
               }else{
                  window.location.href = '/';
