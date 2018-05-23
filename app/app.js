@@ -1,4 +1,4 @@
- (function() {
+// (function() {
    initState();
   var nombrecito;
   var app = angular.module('myApp', ['ngRoute']);
@@ -141,4 +141,4 @@ document.getElementById("btnLogOut").addEventListener('click', e=>{
 
 
  
-})();
+//})();
