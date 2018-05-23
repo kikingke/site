@@ -43,7 +43,7 @@
               console.log('changed1');
                  
               }else{
-                // window.location = '/site';
+                window.location.href = '/site/#!/';
                 console.log('No hay usuarios activos');
               }
           })
@@ -84,6 +84,7 @@ app.controller('homeController', function($scope) {
   $scope.signOut = function(){
     firebase.auth().signOut();
     //window.location.href = '/';
+   window.location.href = '/site/#!/';
   }
 
 });
