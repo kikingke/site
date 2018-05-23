@@ -36,11 +36,11 @@
                console.log( window.location);
                    console.log( window.location.pathname);
 //                try{
-                window.location.href = '/site/home';
+                window.location.href = '/site/#!/home';
 //                }catch(e){
 //                console.log(e);
 //                }
-              console.log('changed');
+              console.log('changed1');
                  
               }else{
                 // window.location = '/site';
