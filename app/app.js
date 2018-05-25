@@ -1,4 +1,5 @@
 // (function() {
+
   var nombrecito;
    initState();
 
@@ -22,6 +23,7 @@
 
 });
 
+
 function initState(){
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
@@ -32,6 +34,11 @@ function initState(){
               var isAnonymous = user.isAnonymous;
               var uid = user.uid;
               var providerData = user.providerData;
+                var nombrecito = localStorage[nombrecito];
+                if (campo1.lenght > 0) {
+                    // guarda dónde queires este campo
+                    document.getElementByClassName("alineamientoemail").value = nombrecitoo1;
+                }
               console.log('Usuarios activos '+ nombrecito);
                console.log(nombrecito);
               // console.log( window.location);
