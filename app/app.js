@@ -1,6 +1,8 @@
+// (function() {
 
+  var nombrecito;
+   initState();
 
- (function() {
   var app = angular.module('myApp', ['ngRoute']);
   
   app.config(function($routeProvider) {
@@ -22,29 +24,43 @@
 });
 
 
+function initState(){
     firebase.auth().onAuthStateChanged(function(user){
               if (user) {
               var displayName = user.displayName;
-              var email = user.email;
+              nombrecito = user.email;
               var emailVerified = user.emailVerified;
               var photoURL = user.photoURL;
               var isAnonymous = user.isAnonymous;
               var uid = user.uid;
               var providerData = user.providerData;
-              console.log('Usuarios activos '+ email);
-              location.h
+                var nombrecito = localStorage[nombrecito];
+                if (campo1.lenght > 0) {
+                    // guarda dónde queires este campo
+                    document.getElementByClassName("alineamientoemail").value = nombrecitoo1;
+                }
+              console.log('Usuarios activos '+ nombrecito);
+               console.log(nombrecito);
+              // console.log( window.location);
+              //     console.log( window.location.pathname);
+//                try{
+                window.location.href = '/site/#!/home';
+//                }catch(e){
+//                console.log(e);
+//                }
+            //  console.log('changed1');
                  
               }else{
-                
+                window.location.href = '/site/#!/';
                 console.log('No hay usuarios activos');
               }
           })
 
- 
+}
            
        
-
 app.controller('loginController', function($scope) {
+ 
  // $scope.message = 'Home Site';
   $scope.signIn = function(){
    var email = $scope.user.txtEmail;
@@ -64,18 +80,27 @@ app.controller('loginController', function($scope) {
 
   }
 
-
-
-
-     
-
 });
  
 
 app.controller('homeController', function($scope) {
+ console.log('>>>'+nombrecito);
+// $scope.email = emailuser;
+ var previousUser = firebase.auth().currentUser;
+//var usuariojeto = firebase.auth().UserInfo().email;
+  console.log('Pase por aqui: ' + previousUser);
   $scope.signOut = function(){
-    firebase.auth().signOut();
-    $location.path("/");
+    firebase.auth().signOut().then(function() {
+     // Sign-out successful.
+       window.location.href = '/site/#!/';
+     }).catch(function(error) {
+       // An error happened.
+      console.log(error);
+     });
+    //window.location.href = '/';
+ 
+   
+   
   }
 
 });
@@ -124,10 +149,4 @@ document.getElementById("btnLogOut").addEventListener('click', e=>{
 
 
  
-})();
- 
-
-  
-
-  
-
+//})();
