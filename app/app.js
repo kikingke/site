@@ -149,4 +149,8 @@ document.getElementById("btnLogOut").addEventListener('click', e=>{
 
 
  
+<<<<<<< HEAD
 //})();
+=======
+//})();
+>>>>>>> 8082e089bd747f9c74ec5e9d0aec6cb175c423c5

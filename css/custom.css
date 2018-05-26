@@ -18,6 +18,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15aaef', end
 
 }
 
+.dropdown-menu.dropdown-menu-right.show::before {
+    content: "";
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    top: -16px;
+    left: calc(85% - 4px);
+}
+
+.dropdown-menu.dropdown-menu-right.show{
+	margin-top:10px;
+}
+
+
 .alineamientoemail{
   margin-top: 0.5rem;
 margin-right: 0.3rem;
@@ -32,12 +46,16 @@ margin-bottom: 0.3rem;
   line-height: 1;
   background-color: transparent;
   border-radius: .25rem;
+	border: 1px solid transparent;
 }
 
+.dropdown-toggle::after {
+	display:none;
+}
 .button_profile:hover{
   color: #3f3f3f !important;
   text-decoration: none !important;
-  border: 1px solid rgba(0,0,0,.3);
+  border-color: rgba(0,0,0,.3);
 }
 
 .formm{
