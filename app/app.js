@@ -34,13 +34,14 @@ function initState(){
               var isAnonymous = user.isAnonymous;
               var uid = user.uid;
               var providerData = user.providerData;
-                var nombrecito = localStorage[nombrecito];
-                if (campo1.lenght > 0) {
+
+                var nombrecitoo1 = localStorage[nombrecito];
+                if (nombrecito.lenght > 0) {
                     // guarda dónde queires este campo
                     document.getElementByClassName("alineamientoemail").value = nombrecitoo1;
                 }
               console.log('Usuarios activos '+ nombrecito);
-               console.log(nombrecito);
+              console.log(nombrecito);
               // console.log( window.location);
               //     console.log( window.location.pathname);
 //                try{
@@ -148,9 +149,4 @@ document.getElementById("btnLogOut").addEventListener('click', e=>{
 })*/
 
 
- 
-<<<<<<< HEAD
 //})();
-=======
-//})();
->>>>>>> 8082e089bd747f9c74ec5e9d0aec6cb175c423c5
